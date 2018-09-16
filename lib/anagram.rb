@@ -12,12 +12,10 @@ class Anagram
     sort_word = @word.split(//).sort
     anagram_list = []
     
-    list.each do |l|
+    list.collect do |l|
       list_word = l.split(//).sort
       list_word == sort_word
-       l
-      #end
-       #return anagram_list
+     l
     end
   
   end
