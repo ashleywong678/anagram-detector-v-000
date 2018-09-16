@@ -17,7 +17,7 @@ class Anagram
       if list_word == sort_word
         l
       else
-        []
+        ''
       end
     end
   
