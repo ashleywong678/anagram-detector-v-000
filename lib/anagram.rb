@@ -10,7 +10,7 @@ class Anagram
   
   def match(list)
     sort_word = @word.split(//).sort
-    anagram_list = []
+    #anagram_list = []
     
     new_list = list.collect do |l|
       list_word = l.split(//).sort
