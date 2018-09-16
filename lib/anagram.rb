@@ -18,7 +18,6 @@ class Anagram
       end
     end
       anagram_list
-    
   end
   
 end
