@@ -10,13 +10,12 @@ class Anagram
   
   def match(list)
     sort_word = @word.split(//).sort
-   #anagram_list = []
+    anagram_list = []
     
-    list.collect do |l|
+    list.each do |l|
       list_word = l.split(//).sort
       if  list_word == sort_word
-       return l
-       #anagram_list << l
+       anagram_list << l
       end
        return anagram_list
     end
