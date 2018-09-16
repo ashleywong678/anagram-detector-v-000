@@ -15,10 +15,12 @@ class Anagram
     new_list = list.collect do |l|
       list_word = l.split(//).sort
       if list_word == sort_word
-        l
+        return l
+      else
+        return []
       end
     end
-  new_list.delete(nil)
+    
   end
   
 end
