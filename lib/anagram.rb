@@ -13,8 +13,8 @@ class Anagram
     anagram_list = []
     
     new_list = list.collect do |l|
-      list_word = l.split(//).sort
-      if list_word == sort_word
+      #list_word = 
+      if l.split(//).sort == sort_word
         anagram_list << l
       end
       anagram_list
