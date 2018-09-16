@@ -16,8 +16,6 @@ class Anagram
       list_word = l.split(//).sort
       if list_word == sort_word
         anagram_list << l
-      else
-        return []
       end
       anagram_list
     end
