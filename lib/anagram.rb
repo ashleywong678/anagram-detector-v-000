@@ -12,13 +12,13 @@ class Anagram
     sort_word = @word.split(//).sort
     anagram_list = []
     
-    list.collect do |l|
+    new_list = list.collect do |l|
       list_word = l.split(//).sort
       if list_word == sort_word
         l
       end
     end
-  
+  new_list.delete(nil)
   end
   
 end
