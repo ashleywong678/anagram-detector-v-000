@@ -14,8 +14,9 @@ class Anagram
     
     list.collect do |l|
       list_word = l.split(//).sort
-      list_word == sort_word
-     l
+      if list_word == sort_word
+        l
+      end
     end
   
   end
