@@ -16,8 +16,8 @@ class Anagram
       if l.split(//).sort == sort_word
         anagram_list << l
       end
-      anagram_list
     end
+      anagram_list
     
   end
   
